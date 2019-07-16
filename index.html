@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thesis Interview</title>
+
+    <style>
+    
+        html, body {
+            font-family:sans-serif;
+            background: url(img/background2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: color;
+            height:100%;
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .container {  
+            flex: 100%;
+        }
+        #nav {
+            flex: 5%;
+            display:flex;
+            justify-content: space-between;  
+            align-items: center; 
+        }
+        #nav ul {
+            /* display: flex;
+             */
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        #logo{
+            
+            text-decoration: none;
+            font-size: 2rem;
+            color: aliceblue;
+            padding: 1rem;
+            
+        }
+        
+        .unlist a{
+            
+            text-decoration: none;
+            padding: 10px;
+            color: azure;
+        }
+        .unlist{
+            font-size: 1.2rem;
+            
+            
+            padding-left: 12px;
+        }
+
+        .mainContent {
+            display: flex;
+            
+            align-items: center;
+            min-height: 80%;
+            margin: 0;
+            width: 100%;
+            
+        }
+
+        .main-info {  
+            padding: 3rem;
+            margin: 0;
+            width: 50%;
+            align-items: center;
+            color: antiquewhite;
+        }
+
+        .sign-up {
+
+            padding: 3rem;
+            
+            margin: 0;
+            width: 50%;
+            align-content: center;
+            color: antiquewhite;
+        }
+        footer{
+            min-height: 10%;
+            display: flex; 
+            justify-content: space-between;  
+            align-items: center; 
+            width: 100%;
+            color: antiquewhite;
+            list-style-type: none;
+        }
+        #copyRight {
+            padding-left: 1rem;
+        }
+        
+        #foot il a{   
+            color: antiquewhite;
+            text-decoration: none;
+            padding-right: 1rem; 
+        }
+        
+        .containerForm{
+            display: flex;
+            flex-flow: column;  
+            align-items: center;
+        }
+        .containerForm h4{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .inputBox {
+            width: 60%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid lightblue;
+            border-radius: 3px;
+        }
+        input{
+            display: inline-block;
+            font-size: 14px;
+            margin: 0;
+            padding: 0; 
+            border:0px;
+            border-bottom: 1px solid rgba(202, 233, 250, 0.899);
+            width: 100%;
+            height: 5vh;
+            padding-top: 0;
+            background-color: rgb(176, 196, 222, .3);
+        }
+        
+        input:hover{
+            background-color: rgb(106, 179, 244);
+            opacity: .7;
+        
+        }
+        button {
+            opacity: .7;
+            margin: 0;
+            padding: 0;
+            border:0;    
+            width: 100%;
+            height: 5vh;
+            padding-top: 0;
+            background-color: rgb(66, 131, 215); 
+        }
+        button:hover{
+            opacity: 1;
+        }
+        ::placeholder {
+            padding-left: 10px;
+            color: aliceblue;
+            opacity: .8;
+        }
+        a:hover{
+            opacity: .7;
+        }
+        @media screen and (max-width: 600px){
+            .container{
+                display: flex;
+                flex-direction: column ;
+            }
+            .mainContent{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 100%;
+                
+            }
+            .sign-up{
+                width: 100%;
+            }
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="nav"> 
+            <a id="logo" href="#">Stamp</a>  
+           
+            <ul class="unlist">
+                <il><a href="#">About</a></il>
+                <il><a href="#">Integrations</a></il>
+                <il><a href="#">Pricing</a></il>
+                <il><a href="#">Contacts</a></il>
+            </ul>
+        
+        </div> 
+    <!-- End of nav -->
+
+        <div class="mainContent">
+            <div class="main-info">
+                <h1>Simple Way to Organize Your Inspirations</h1>
+                <p>
+                I think what motivates people is not great hate,
+                but great love for other people.
+                </p>
+            </div>
+            <div class="sign-up">
+                <form action="#">
+                    <div class="containerForm">
+                        <h4>Sign up for free</h3>
+                        <div class="inputBox">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <button type="submit" class="signUp">Sing up</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <footer>
+            <small id="copyRight">&copy; 2019 JLR. All Rights Reserved</small>
+            <ul id="foot">
+                <il><a href="#">Contact</a></il>
+                <il><a href="#">Help</a></il>
+                <il><a href="#">Terms of Use</a></il>
+                <il><a href="#">Privacy Policy</a></il>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
